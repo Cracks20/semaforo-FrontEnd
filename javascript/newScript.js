@@ -10,18 +10,18 @@ class light {
     lightOn() {
         let element = document.getElementById(this.ID);
         element.style.backgroundColor = this.color;
-        element.style.boxShadow = `4px -8px ${this.shadowColor}`;
+        element.style.boxShadow = `0.33vh -0.66vh ${this.shadowColor}`;
     }
     lightOff() {
         let element = document.getElementById(this.ID);
         element.style.backgroundColor = "#494650";
-        element.style.boxShadow = "4px -8px #38363d";
+        element.style.boxShadow = "0.33vh -0.66vh #38363d";
     }
 }
 
-const topLight = new light("circle1","red","#BE0000");
-const midLight = new light("circle2","yellow","#BEBE00");
-const downLight = new light("circle3","lime","#00BE00");
+const topLight = new light("circle1","#FF0000","#BE0000");
+const midLight = new light("circle2","#FFFF00","#BEBE00");
+const downLight = new light("circle3","#00FF00","#00BE00");
 const lightList = [topLight, midLight, downLight, midLight];
 
 const changeLightsColor = () => {
