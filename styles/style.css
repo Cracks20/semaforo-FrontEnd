@@ -6,26 +6,31 @@ body {
 
 main {
     height: 90vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 2.5vh;
     text-align: center;
     font-family: "Montserrat";
-    font-size: 45px;
+    font-size: 7.5vh;
     color: #2c2836;
 }
 
 .semaforo {
-    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .round-rectangle {
-    height: 840px;
-    width: 400px;
+    height: 65vh; /*height:840px width:400px*/
+    width: 30.95vh;
     background-color: #433d54;
-    border-radius: 70px;
+    border-radius: 5vh;
     display: grid;
-    grid-template-columns: 3fr;
     justify-items: center;
     align-items: center;
 }
@@ -33,19 +38,22 @@ main {
 .circle {
     background-color: #494650;
     border-radius: 360px;
-    height: 200px;
-    width: 200px;
-    box-shadow: 4px -8px #38363d;
+    height: 15.47vh;
+    width: 15.47vh;
+    box-shadow: 0.33vh -0.66vh #38363d;
 }
 
 #starterButton {
+    margin: 5vh;
+    height: 6vh;
+    width: 30.95vh;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 1.28vh;
     padding: 18px 60px;
     background: #494650;
     color: white;
     border: none;
-    border-radius: 12px;
+    border-radius: 1vh;
 }
 
 #starterButton:hover {
